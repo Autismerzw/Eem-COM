@@ -1,0 +1,29 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-11 21:10:44
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-12 09:30:17
+*/
+.page-wrap{
+	padding: 0 90px;
+	min-height: 450px;
+	background: #fff;
+	text-align: center;
+	width: 500px;
+	margin-top: 20px;
+}
+.resuit-con{
+	width: 300px;
+	margin: 20px auto;
+	color:#555;
+	display: none;
+
+}
+.resuit-con p{
+	margin-top: 20px;
+}
+.resuit-con p .link{
+	padding: 5px 10px;
+	margin: 0 10px;
+	border: 1px solid #ccc;
+}

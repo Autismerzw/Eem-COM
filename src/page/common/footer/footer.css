@@ -1,0 +1,20 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-11 09:37:22
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-11 09:43:30
+*/
+footer{
+	text-align: center;
+	padding: 10px;
+}
+footer .link{
+	padding: 0 10px;
+}
+a{
+	line-height: 30px;
+}
+footer p{
+	color: #666;
+	line-height: 30px;
+}

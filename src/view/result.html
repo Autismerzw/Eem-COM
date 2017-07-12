@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title>mmall电子商城--<%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/header-nav.html')  %>
+    	<section class="page-wrap w">
+    		<section class="resuit-con register-success">
+    			<h1 class="resuit-title">恭喜您，注册成功!</h1>
+    			<p>
+    				<a href="./index.html" class="link">回到首页</a>
+    			</p>
+    		</section>
+    		<section class="resuit-con default-success">
+    			<h1 class="resuit-title">恭喜您，操作成功!</h1>
+    			<p>
+    				<a href="./index.html" class="link">回到首页</a>
+    			</p>
+    		</section>
+    	</section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

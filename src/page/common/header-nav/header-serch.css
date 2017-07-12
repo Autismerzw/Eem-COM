@@ -1,0 +1,41 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-11 09:57:49
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-11 10:37:56
+*/
+header{
+	overflow: hidden;
+	padding: 10px 100px;
+}
+.logo{
+	font-size: 36px;
+	font-weight: bolder;
+	color: #c60023;
+	margin-left: 100px;
+	float: left;
+}
+.serch-con{
+	float: left;
+	line-height: 65px;
+	position: relative;
+}
+.serch-con .serch-input{
+	width: 550px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 10px;
+	font-size: 16px;
+	border:1px solid #d3d3d3; 
+	outline: 0;
+	margin-left: 50px;
+}
+.serch-con .serch-input:focus{
+	border:1px solid #e60023;
+}
+.serch-con button{
+	position: absolute;
+	top: 12px;
+    right: -93px;
+    padding: 0 30px;
+}
