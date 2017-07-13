@@ -1,0 +1,76 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-12 17:33:28
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-12 19:05:24
+*/
+.page-wrap{
+	/*background: #e72955;*/
+	padding: 40px 90px;
+	min-height: 450px;
+}
+.user-login-box{
+	background: #fff;
+	width: 400px;
+	margin: 20px auto;
+}
+.user-login-box ul{
+	display: none;
+}
+.user-login-box .login-title{
+	width: 100%;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: bold;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+
+}
+.user-login-box .user-box{
+	padding: 20px;
+}
+.user-box .err-msg{
+	width: 80%;
+	margin:0 auto;
+	padding:4px 0 4px 40px;
+	background: #fde9e9;
+	color: #e60023;
+	display: none;
+}
+.err-msg .error-icon{
+	margin-right: 10px;
+}
+.link-item{
+	padding: 10px 0 0 35px;
+	position: relative;
+}
+.reset-text{
+	padding-left:35px;
+	font-size: 14px; 
+}
+.link-item label{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 10px;
+	text-align: center;
+	line-height: 40px;
+	background: #ccc;
+}
+.link-item input{
+	width: 77%;
+    height: 40px;
+    margin-left: 39px;
+    outline: none;
+    padding-left: 10px;
+}
+.btn-sub{
+	width: 69.2%;
+    margin: 10px 0 0 35px;
+    text-align: center;
+}
+div.link-item{
+	text-align: right;
+	padding: 10px 35px 0 0;
+}

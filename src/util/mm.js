@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-09 16:07:36
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-11 09:15:56
+* @Last Modified time: 2017-07-13 19:02:12
 */
 
 'use strict';
@@ -22,12 +22,12 @@ var _mm = {
 			data : parem.data || "",
 			success : function(res){
 				// 请求成功
-				if (1 === res.status) {
+				if (0 === res.status) {
 					typeof parem.success === 'function' && parem.success(res.data,res.msg);
 				} else if (10 === res.status) { 
 					// 未登录，强制跳转到登陆
 					_this.doLogin();
-				}else if(0 === res.status){
+				}else if(1 === res.status){
 					// 请求成功，但数据错误
 					typeof parem.error === 'function' && parem.error(res.msg);
 				}
@@ -55,10 +55,10 @@ var _mm = {
 		return result;
 	},
 	// 成功提示
-	successTips : function (){
+	successTips : function (msg){
 		alert(msg || '操作成功');
 	},
-	errorTips : function (){
+	errorTips : function (msg){
 		alert(msg || '出问题了');
 	},
 	// 字段验证，支持非空 手机 邮箱判断
@@ -79,7 +79,7 @@ var _mm = {
 	},
 	// 通过一登陆请求
 	doLogin : function(){
-        window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+        window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
     },
 	// 主页
 	goHome : function (){

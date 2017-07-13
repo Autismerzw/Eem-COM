@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-11 21:20:49
+ * @Last Modified time: 2017-07-13 22:45:29
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -27,10 +27,15 @@ var getHtmlConfig = function(name,title) {
 var config = {
     // 处理多个文件
     entry: {
-        'common': ['./src/page/common/index.js'],
-        'index': ['./src/page/index/index.js'],
-        'login': ['./src/page/login/index.js'],
-        'result': ['./src/page/result/result.js']
+        'common'             : ['./src/page/common/index.js'],
+        'index'              : ['./src/page/index/index.js'],
+        'user-login'         : ['./src/page/user-login/user-login.js'],
+        'user-register'      : ['./src/page/user-register/user-register.js'],
+        'user-pass-reset'    : ['./src/page/user-pass-reset/user-pass-reset.js'],
+        'user-content'       : ['./src/page/user-content/user-content.js'],
+        'user-content-updata': ['./src/page/user-content-updata/user-content-updata.js'],
+        'user-pass-update'   : ['./src/page/user-pass-update/user-pass-update.js'],
+        'result'             : ['./src/page/result/result.js']
     },
     // 设置多文件夹存放文件
     output: {
@@ -52,7 +57,12 @@ var config = {
         new ExtractTextPlugin("css/[name].css"),
         // html模板的处理
         new HtmlWebpackPlugin(getHtmlConfig('index','首页')),
-        new HtmlWebpackPlugin(getHtmlConfig('login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','忘记密码')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-content','个人中心')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-content-updata','修改个人信息')),
+        new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),
         new HtmlWebpackPlugin(getHtmlConfig('result','操作结果'))
     ],
     // 处理css

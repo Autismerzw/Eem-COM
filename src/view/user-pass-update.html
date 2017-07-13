@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title>mmall电子商城--<%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav-top.html')  %>
+    	<%= require('html-loader!./layout/header-serch.html')  %>
+    	<div class="crumb w">
+    		<p>
+    			<a href="./index.html" class="link crumb-con">MMall</a>
+    			<span>></span>
+    			<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+    		</p>
+    	</div>
+    	<section class="page-wrap w">
+    		<%= require('html-loader!./layout/user-aside-nav.html')  %>
+            <article class="main user-content-main">
+            	<h1 class="main-title">
+            		修改密码
+            	</h1>
+            	<section class="main-body">
+            		<ul class="user-content-info">
+            			<li class="user-info-item">
+      						<span class="info-title">原始密码：</span>
+      						<input type="password" id="password" class="info-text" autocomplete="off">
+						</li>
+						<li class="user-info-item">
+      						<span class="info-title">请输入新密码：</span>
+      						<input type="password" id="password-new" class="info-text" autocomplete="off">
+						</li>
+						<li class="user-info-item">
+      						<span class="info-title">请再次输入新密码：</span>
+      						<input type="password" id="password-confirm" class="info-text" autocomplete="off">
+						</li>
+            		</ul>
+            		<button class="btn btn-sm btn-submit">提交</buttom>
+            	</section>
+            </article>
+    	</section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

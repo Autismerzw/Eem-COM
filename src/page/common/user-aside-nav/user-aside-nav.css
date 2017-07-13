@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-11 17:36:08
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-11 18:28:29
+* @Last Modified time: 2017-07-13 18:30:45
 */
 .page-wrap{
 	padding: 0 90px;
@@ -16,6 +16,7 @@ aside{
 aside .nav-item{
 	line-height: 25px;
 	font-size: 14px;
+	padding-top: 10px
 }
 .nav-item .link{
 	color: #888;
@@ -23,10 +24,6 @@ aside .nav-item{
 aside .nav-item.active .link{
 	color: #c60023;
 }
-article.main{
-	/*width: 950px;*/
-	/*float: left;*/
+.user-content-main{
 	margin-left: 150px;
-	border: 1px solid #e60023;
-
 }

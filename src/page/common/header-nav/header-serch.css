@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-11 09:57:49
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-11 10:37:56
+* @Last Modified time: 2017-07-13 18:09:28
 */
 header{
 	overflow: hidden;
@@ -14,6 +14,8 @@ header{
 	color: #c60023;
 	margin-left: 100px;
 	float: left;
+	height: 65px;
+    line-height: 65px;
 }
 .serch-con{
 	float: left;
@@ -38,4 +40,14 @@ header{
 	top: 12px;
     right: -93px;
     padding: 0 30px;
+}
+/*面包屑导航栏*/
+.crumb{
+	padding: 0 90px;
+	height: 40px;
+	background: #eee;
+	line-height: 40px;
+	color: #888;
+	font-size: 14px;
+	border-top:1px solid #e60023;
 }
