@@ -2,10 +2,146 @@
 * @Author: 16469
 * @Date:   2017-07-08 19:08:32
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-09 16:39:17
+* @Last Modified time: 2017-07-15 12:24:33
 */
-body{
+.keyword-box{
+	min-width: 210px;
+    height: 322px;
+    background: rgba(0,0,0,.75);
+}
+.keyword-box .kw-item{
+	padding: 0 10px;
+	height: 46px;
+    line-height: 45px;
+}
+.keyword-box .kw-item:hover{
+	background: #fff;
+}
+.keyword-box .kw-item:hover .link{
+	color: #999;
+}
+.keyword-box .kw-item:hover .link:hover{
+	color: #e60023;
+}
+.keyword-box .kw-item:hover .kw-item-box{
+	display: block;
+}
+.kw-item .kw-item-box{
+	background: #ffffff;
+    position: absolute;
+    width: 300px;
+    height: 322px;
+    left: 300px;
+    top: 0px;
+    display: none;
+    padding: 0 15px;
+    z-index:99;
+}
+.kw-item .link{
+	color: #fff;
+    font-size: 16px;
+}
+/*轮播图*/
+article.banner-con{
+	position: relative;
+	height: 322px;
+	margin-left: 210px;
 	background: #ccc;
-	font-size: 20px;
-
+	padding: 0;
+}
+div.loading{
+	margin-top: 120px;
+}
+.banner-con .banner-img{
+	width: 100%;
+	height:322px;
+}
+.dots{
+	position: absolute;
+	bottom: -5px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.dots li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 4px;
+	text-indent: -999px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: .4;
+	transition: background .5s,opacity .5s;
+}
+.dots li.active{
+	background: #fff;
+	opacity: 1;
+}
+.prev{
+	left: 0;
+}
+.next{
+	right: 0;
+}
+.banner-arrow{
+    position: absolute;
+    top: 141px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    background: rgba(0,0,0,.2);
+    cursor: pointer;
+}
+/*floor*/
+.floor-title{
+	height: 50px;
+	line-height: 50px;
+	color: #d58717;
+	border-bottom: 1px solid #d58717;
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: 400;
+}
+.floor-item{
+	overflow: hidden;
+	margin-right: -20px;
+}
+.floor-item a{
+	margin: 15px 20px 15px 0;
+	width: 200px;
+	height: 200px;
+	float: left;
+	position: relative;
+	background: #fff;
+}
+.floor-item a img{
+	width: 160px;
+	height: 165px;
+	margin: 0 auto;
+}
+.floor-item a div{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+.floor-2{
+	color: #3b838c;
+	border-color: #3b838c;
+}
+.floor-3{
+	color: #a93931;
+	border-color: #a93931;
+}
+.floor-4{
+	color: #488bad;
+	border-color: #488bad;
+}
+.link{
+	color: #5e5e5e;
 }

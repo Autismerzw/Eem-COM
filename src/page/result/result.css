@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-11 21:10:44
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-12 09:30:17
+* @Last Modified time: 2017-07-16 22:45:13
 */
 .page-wrap{
 	padding: 0 90px;
@@ -26,4 +26,5 @@
 	padding: 5px 10px;
 	margin: 0 10px;
 	border: 1px solid #ccc;
+	background: #fff;
 }

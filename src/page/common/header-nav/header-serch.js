@@ -11,8 +11,10 @@ var _mm = require('util/mm.js');
 var serch = {
     init: function() {
         this.bindEvent();
+        this.onLoad();
     },
     onLoad:function(){
+      // keyWord存在则 输入框回填
     	var keyWord = _mm.getUrlparam('keyword');
     	if (keyWord){
     		$('#serch-input').val(keyWord);

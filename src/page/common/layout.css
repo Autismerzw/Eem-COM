@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-10 08:14:54
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-13 18:29:24
+* @Last Modified time: 2017-07-15 16:16:13
 */
 body{
 	background: #f6f6f6;
@@ -23,6 +23,10 @@ input[type = "chackbox"]{
 	margin : 0 auto;
 	position: relative;
 	overflow: hidden;
+}
+.page-wrap{
+	padding: 0 90px;
+	box-sizing: border-box;
 }
 /*主题容器*/
 article.main{

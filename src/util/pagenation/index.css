@@ -1,0 +1,37 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-16 09:07:02
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-16 17:30:48
+*/
+span.pg-item{
+	padding: 2px 8px;
+	background: #fff;
+	border:1px solid #ccc;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.pg-content{
+	text-align: center;
+}
+span.pg-item.active{
+	border-color: #c60023;
+	background: #c60023;
+	color: #fff;
+	cursor: auto;
+
+}
+span.pg-item.disabled{
+	background: #ccc;
+	color: #fff;
+	cursor: auto;
+
+}
+span.pg-total{
+	padding: 2px 8px;
+	background: #ccc;
+	color: #fff;
+	cursor: auto;
+	margin-left: 10px;
+
+}

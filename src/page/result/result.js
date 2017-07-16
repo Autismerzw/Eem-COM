@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-11 21:10:53
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-12 09:34:01
+* @Last Modified time: 2017-07-16 22:42:05
 */
 
 'use strict';
@@ -13,4 +13,7 @@ $(function (){
 	var type = _mm.getUrlparam('type') || 'default';
 	var $element = $('.' + type + '-success');
 	$element.show();
+	$(document).on('click','.go',function(){
+		history.go(-1);
+	})
 })

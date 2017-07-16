@@ -2,13 +2,13 @@
 * @Author: 16469
 * @Date:   2017-07-13 16:57:04
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-13 19:10:49
+* @Last Modified time: 2017-07-15 16:18:30
 */
 
 'use strict';
+require('./user-content.css');
 require('../common/header-nav/nav-top.js');
 require('../common/header-nav/header-serch.js');
-require('../user-content/user-content.css');
 var navSide = require('../common/user-aside-nav/user-aside-nav.js');
 var _user = require('service/user-service.js');
 var _mm = require('util/mm.js');
