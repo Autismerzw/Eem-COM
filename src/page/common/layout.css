@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-10 08:14:54
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-15 16:16:13
+* @Last Modified time: 2017-07-17 19:17:14
 */
 body{
 	background: #f6f6f6;
@@ -91,4 +91,13 @@ article.main .main-body{
 	border:1px solid #ddd;
 	border-radius: 5px; 
 	opacity: .6;
+}
+.err-tip{
+	height: 200px;
+    line-height: 200px;
+    color: #999;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    background: #eee;
 }
