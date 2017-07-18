@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-16 23:41:22
+ * @Last Modified time: 2017-07-19 02:17:44
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -32,6 +32,9 @@ var config = {
         'list'               : ['./src/page/list/list.js'],
         'detail'             : ['./src/page/detail/detail.js'],
         'cart'               : ['./src/page/cart/cart.js'],
+        'order-confirm'      : ['./src/page/order-confirm/order-confirm.js'],
+        'order-list'         : ['./src/page/order-list/order-list.js'],
+        'order-detail'       : ['./src/page/order-detail/order-detail.js'],
         'user-login'         : ['./src/page/user-login/user-login.js'],
         'user-register'      : ['./src/page/user-register/user-register.js'],
         'user-pass-reset'    : ['./src/page/user-pass-reset/user-pass-reset.js'],
@@ -63,6 +66,9 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('list','商品列表页')),
         new HtmlWebpackPlugin(getHtmlConfig('detail','商品详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('cart','购物车列表页')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-confirm','订单确认页')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-list','订单列表页')),
+        new HtmlWebpackPlugin(getHtmlConfig('order-detail','订单详情页')),
         new HtmlWebpackPlugin(getHtmlConfig('user-login','用户登录')),
         new HtmlWebpackPlugin(getHtmlConfig('user-register','用户注册')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-reset','忘记密码')),

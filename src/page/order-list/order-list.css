@@ -1,0 +1,71 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-18 03:57:38
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-19 01:48:25
+*/
+.order-list th,td{
+	border: 0;
+	padding: 0;
+}
+.order-list{
+	width: 100%;
+}
+.order-list.header{
+	background: #eee;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+
+.order-list th:nth-child(1){
+	width: 10%;
+	padding: 10px;
+}
+.order-list th:nth-child(1) img{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	border:1px solid #ddd;
+}
+.order-list th:nth-child(2){
+	width: 30%;
+}
+.order-list th:nth-child(2) a{
+	font-size: 12px;
+	font-weight: 100px;
+}
+.order-list th:nth-child(3){
+	width: 20%;
+	text-align: center;
+}
+.order-list th:nth-child(4){
+	width: 20%;
+	text-align: center;
+}
+.order-list th:nth-child(5){
+	width: 20%;
+	text-align: center;
+}
+.order-item {
+	margin-bottom: 15px;
+}
+.order-item td {
+	background: #eee;
+	color: #999;
+	font-size: 12px;
+	position: relative;
+	border: 0;
+}
+.order-item tr{
+	background: #fafafa;
+	border-bottom: 1px solid #eee;
+}
+.order-text{
+	margin-right: 25px;
+}
+.order-item td a.sub-more{
+	position: absolute;
+	right: 10px;
+}

@@ -2,7 +2,7 @@
 * @Author: 16469
 * @Date:   2017-07-10 08:14:54
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-17 19:17:14
+* @Last Modified time: 2017-07-18 01:17:29
 */
 body{
 	background: #f6f6f6;
@@ -28,7 +28,7 @@ input[type = "chackbox"]{
 	padding: 0 90px;
 	box-sizing: border-box;
 }
-/*主题容器*/
+/*主题容器1*/
 article.main{
 	padding: 10px;
 	margin-bottom: 10px;
@@ -42,6 +42,23 @@ article.main .main-title{
 	border-bottom: 1px solid #eee;
 }
 article.main .main-body{
+	padding:10px;
+	overflow: hidden;
+}
+/*主题容器2*/
+.panel{
+	padding: 10px;
+	margin-top: 10px;
+	background: #fff;
+}
+.panel .panel-title{
+	padding: 10px;
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	border-bottom: 1px solid #eee;
+}
+.panel .panel-body{
 	padding:10px;
 	overflow: hidden;
 }
