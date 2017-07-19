@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-10 10:17:57
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-13 10:31:55
+ * @Last Modified time: 2017-07-19 20:34:27
  */
 
 'use strict';
@@ -28,7 +28,7 @@ var nav = {
             window.location.href = "./logup.html";
         });
         // 退出
-        $('.js-logout').click(function() {
+        $('.js-out').click(function() {
             _user.logout(function(res) {
                 window.location.reload();
             }, function(errMsg) {
