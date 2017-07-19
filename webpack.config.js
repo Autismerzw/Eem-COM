@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-19 03:33:17
+ * @Last Modified time: 2017-07-19 23:30:22
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -17,6 +17,7 @@ var getHtmlConfig = function(name,title) {
     return {
         template: './src/view/'+ name +'.html',
         filename: 'view/'+ name +'.html',
+        favicon : './mall.ico',
         title: title,
         inject: true,
         hash: true,
@@ -42,13 +43,14 @@ var config = {
         'user-content'       : ['./src/page/user-content/user-content.js'],
         'user-content-updata': ['./src/page/user-content-updata/user-content-updata.js'],
         'user-pass-update'   : ['./src/page/user-pass-update/user-pass-update.js'],
-        'result'             : ['./src/page/result/result.js']
+        'result'             : ['./src/page/result/result.js'],
+        'about'              : ['./src/page/about/about.js'],
     },
     // 设置多文件夹存放文件
     output: {
-        path: './dist',
+        path: __dirname + '/dist/',
+        publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.happmmall.com/mmall-fe/dist/',
         filename: 'js/[name].js',
-        publicPath  : '/dist',
     },
     // 加载外部模块，或者变量
     externals: {
@@ -77,7 +79,8 @@ var config = {
         new HtmlWebpackPlugin(getHtmlConfig('user-content','个人中心')),
         new HtmlWebpackPlugin(getHtmlConfig('user-content-updata','修改个人信息')),
         new HtmlWebpackPlugin(getHtmlConfig('user-pass-update','修改密码')),
-        new HtmlWebpackPlugin(getHtmlConfig('result','操作结果'))
+        new HtmlWebpackPlugin(getHtmlConfig('result','操作结果')),
+        new HtmlWebpackPlugin(getHtmlConfig('about','关于我们'))
     ],
     // 处理css
     module: {

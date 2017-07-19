@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-16 23:39:44
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-17 23:06:24
+ * @Last Modified time: 2017-07-19 20:57:51
  */
 
 'use strict';
@@ -108,7 +108,7 @@ var page = {
                 var $this = $(this),
                    	arrProductIds = [],
                    	$selects = $('.cart-select:checked');
-                   	for (let i = 0; i < $selects.length; i++) {
+                   	for (var i = 0; i < $selects.length; i++) {
                    		var $selectsNum = $($selects[i]);
                    		var ProductId =  $selectsNum.parents('.cart-table').data('product-id');
                    		arrProductIds.push(ProductId);
