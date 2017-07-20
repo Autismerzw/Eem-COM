@@ -1,0 +1,45 @@
+<div class="address-modal">
+    <div class="modal-container">
+        {{#isUpdate}}
+            <h1 class="modal-title">修改收货地址</h1>
+        {{/isUpdate}}
+        {{^isUpdate}}
+            <h1 class="modal-title">新建收货地址</h1>
+        {{/isUpdate}}
+        <i class="fa fa-close close"></i>
+    </div>
+    <div class="modal-body">
+        <div class="form">
+            <div class="form-line">
+                <label class="label-t" for="sj-name"><span class="impor">*</span>收件人姓名：</label>
+                <input type="text" class="" id="sj-name" placeholder="请输入收件人姓名" value="{{data.receiverName}}">
+            </div>
+            <div class="form-line">
+                <label class="label-t" for="sj-name"><span class="impor">*</span>省 / 市：</label>
+                <select class="form-item" id="province">
+                    <option value="">请选择</option>
+                </select>
+                <select class="form-item" id="city">
+                    <option value="">请选择</option>
+                    
+                </select>
+            </div>
+            <div class="form-line">
+                <label class="label-t" for="sj-address"><span class="impor">*</span>详细地址：</label>
+                <input type="text" class="address" id="sj-address" placeholder="请输入收件人详细地址：" value="{{data.receiverAddress}}">
+            </div>
+            <div class="form-line">
+                <label class="label-t" for="sj-phone"><span class="impor">*</span>联系方式：</label>
+                <input type="text" class="phone" id="sj-phone" placeholder="请输入收件人联系方式" value="{{data.receiverPhone}}">
+            </div>
+            <div class="form-line">
+                <label class="label-t" for="sj-code"><span class="impor">&nbsp;</span>邮政编码：</label>
+                <input type="text" class="zip-code" id="sj-code" placeholder="如：030024" value="{{data.receiverZip}}">
+            </div>
+            <div class="form-line">
+                <input type="hidden" value="{{data.id}}" id="sj-id">
+                <button class="btn address-btn">保存收货地址</button>
+            </div>
+        </div>
+    </div>
+</div>

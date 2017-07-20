@@ -1,0 +1,45 @@
+<table class="order-list header">
+      <tr>
+            <th class="order-call call-img">&nbsp;</th>
+            <th class="order-call call-info">商品信息</th>
+            <th class="order-call call-price">单价</th>
+            <th class="order-call call-num">数量</th>
+            <th class="order-call call-total">合计</th>
+      </tr>
+</table>
+{{#list}}
+<table class="order-list order-item">
+      <tr>
+            <td colspan="6"> 
+            	<span class="order-text">
+            		<span>订单号</span>
+            		<a href="./order-detail.html?orderNumber={{orderNo}}" class="link">{{orderNo}}</a>
+            	</span>
+            	<span class="order-text">{{createTime}}</span>
+            	<span class="order-text">
+            		收件人：{{receiverName}}
+            	</span>
+            	<span class="order-text">订单状态：{{statusDesc}}</span>
+            	<span class="order-text">
+            		<span>订单总价：</span>
+            		<span class="enhance">￥{{payment}}</span>
+            	</span>
+            	<a href="./order-detail.html?orderNumber={{orderNo}}" class="link sub-more">查看详情></a>
+            </td>
+      </tr>
+      {{#orderItemVoList}}
+      <tr>
+            <th class="order-call call-img">
+			<img src="{{imageHost}}{{productImage}}" alt="">
+            </th>
+            <th class="order-call call-info">
+			<a href="./detail.html?productId={{productId}}" class="link">{{productName}}</a>
+            </th>
+            <th class="order-call call-price">￥{{currentUnitPrice}}</th>
+            <th class="order-call call-num">{{quantity}}</th>
+            <th class="order-call call-total">￥{{totalPrice}}</th>
+      </tr>
+      {{/orderItemVoList}}
+
+</table>
+{{/list}}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav-top.html')  %>
+    	<%= require('html-loader!./layout/header-serch.html')  %>
+    	<section class="page-wrap w">
+    		<%= require('html-loader!./layout/user-aside-nav.html')  %>
+            <article class="main">
+                这是主模块
+            </article>
+    	</section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

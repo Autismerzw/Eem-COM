@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title>mmall电子商城--<%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav-top.html')  %>
+    	<%= require('html-loader!./layout/header-serch.html')  %>
+    	<div class="crumb w">
+    		<p>
+    			<a href="./index.html" class="link crumb-con">MMall</a>
+    			<span>></span>
+    			<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+    		</p>
+    	</div>
+    	<section class="page-wrap w">
+    		<!-- 排序容器 -->
+    		<ul class="sort-con">
+    			<li class="sort-item active" data-type="default">默认排序</li>
+    			<li class="sort-item" data-type="price">
+    				<span>价格</span>
+    				<i class="fa fa-sort-asc"></i>
+    				<i class="fa fa-sort-desc"></i>
+    			</li>
+    		</ul>
+    		<!-- list容器 -->
+    		<ul class="p-list-con">
+    			<li class="p-item">
+    				<a href="./detail.html?" class="p-img">
+    					<img src="" alt="">
+    				</a>
+    				<p class="p-price">￥6666</p>
+    				<a href="./detail.html?" class="p-title">
+    					Apple iPhone 7 Plus (A1661) 128G手机 
+    				</a>
+    			</li>
+    		</ul>
+    	       <!-- 分页容器 -->
+            <div class="pagination"></div>
+        </section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

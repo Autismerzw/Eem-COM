@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title>mmall电子商城--<%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/nav-top.html')  %>
+    	<%= require('html-loader!./layout/header-serch.html')  %>
+    	<div class="crumb w">
+    		<p>
+    			<a href="./index.html" class="link crumb-con">MMall</a>
+    			<span>></span>
+    			<span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+    		</p>
+    	</div>
+    	<section class="page-wrap w">
+			<article class="main user-content-main">
+            	<h1 class="main-title">
+            		关于我们
+            	</h1>
+            	<p>关于我们关于我们关于我们关于我们</p>
+            </article>
+        </section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

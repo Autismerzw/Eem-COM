@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<%= require('html-loader!./layout/html-common.html')  %>
+    	<title>mmall电子商城--<%= htmlWebpackPlugin.options.title%></title>
+    </head>
+    <body>
+    	<%= require('html-loader!./layout/header-nav.html')  %>
+    	<section class="page-wrap w">
+    		<section class="user-login-box">
+    			<p class="login-title">用户登录</p>
+                <div class="user-box">
+                    <p class="err-msg">
+                        <i class="fa fa-minus-circle error-icon"></i>
+                         <span class="error-text">用户名或密码错误</span>
+                    </p>
+                    <ul>
+                        <li class="link-item">
+                            <label class="user-label" for="user-name">
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" class="user-con user-name" id="user-name" placeholder="请输入用户名" autocomplete="off">
+                        </li>
+                        <li class="link-item">
+                            <label class="user-label" for="user-password">
+                                <i class="fa fa-lock"></i>
+                            </label>
+                            <input type="password" class="user-con user-password" id="user-password" placeholder="请输入密码" autocomplete="off">
+                        </li>
+                    </ul>
+                    <span class="btn btn-sub" id="submit">登陆</span>
+                    <div class="link-item">
+                        <a href="./user-register.html" class="link">注册</a> 
+                        <span class="link-text">/</span>
+                        <a href="./user-pass-reset.html" class="link">忘记密码</a>
+                    </div>
+                </div>
+    		</section>
+    	</section>
+    	<%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

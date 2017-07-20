@@ -1,0 +1,37 @@
+<section class="intro-warp">
+	<figure class="img-cont">
+		<div class="main-img-con">
+			<img class="main-img" src="{{imageHost}}{{mainImage}}" alt="nova">
+		</div>
+		<ul class="p-img-list">
+			{{#subImages}}
+			<li class="p-img-item">
+				<img class="p-img" src="{{imageHost}}{{.}}" alt="nova">
+			</li>
+			{{/subImages}}
+		</ul>
+	</figure>
+	<div class="p-inof-cont">
+		<h3 class="p-name">{{name}}</h3>
+		<span class="p-subtitle">{{subtitle}}</span>
+		<p class="info-cont p-price-cont">价格:<span class="price info-item">￥{{price}}</span></p>
+		<p class="info-cont">库存:<span class="info-item p-price">{{stock}}</span></p>
+		<p class="info-cont">
+			数量:
+			<span class="p-count">1</span>
+			<span class="count-btn add">+</span>
+			<span class="count-btn less">-</span>
+		</p>
+		<button class="btn cart-add">加入购物车</button>
+	</div>
+</section>
+<section class="detail-warp">
+	<div class="detail-tab-cont">
+		<ul class="tab-list">
+			<li class="tab-item active">商品详情</li>
+		</ul>
+	</div>
+	<div class="detail-con">
+		{{{detail}}}
+	</div>
+</section>

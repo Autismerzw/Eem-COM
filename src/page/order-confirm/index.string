@@ -1,0 +1,30 @@
+<table class="product-table">
+    <tr>
+        <th>&nbsp;</th>
+        <th>商品信息</th>
+        <th>单价</th>
+        <th>数量</th>
+        <th>小计</th>
+    </tr>
+    {{#orderItemVoList}}
+     <tr data-productId="{{productId}}">
+        <th>
+            <img src="{{imageHost}}{{productImage}}" alt="">
+        </th>
+        <th>
+            <a href="./detail.html?productId={{productId}}" class="link">{{productName}}</a>
+        </th>
+        <th>￥{{currentUnitPrice}}</th>
+        <th>{{quantity}}</th>
+        <th>￥{{totalPrice}}</th>
+    </tr>
+    {{/orderItemVoList}}
+</table>
+
+<div class="cart-bottom-con">
+    <div class="cart-cell cell-total">
+        <span>总价</span>
+        <span class="submit-count">￥{{productTotalPrice}}</span>
+        <button class="btn cart-add">结算</button>
+    </div>
+</div>

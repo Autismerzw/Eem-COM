@@ -1,0 +1,20 @@
+<li class="user-info-item">
+      <span class="info-title">用户名：</span>
+      <span class="info-text">{{username}}</span>
+</li>
+<li class="user-info-item">
+      <span class="info-title">电&nbsp;&nbsp;话：</span>
+      <span class="info-text">{{phone}}</span>
+</li>
+<li class="user-info-item">
+      <span class="info-title">邮&nbsp;&nbsp;箱：</span>
+      <span class="info-text">{{email}}</span>
+</li>
+<li class="user-info-item">
+      <span class="info-title">密码问题：</span>
+      <span class="info-text">{{question}}</span>
+</li>
+<li class="user-info-item">
+      <span class="info-title">密码答案：</span>
+      <span class="info-text">{{answer}}</span>
+</li>

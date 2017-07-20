@@ -1,0 +1,22 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-10 09:33:33
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-13 18:10:04
+*/
+header{
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+	padding: 0 50px;
+}
+.logo{
+	font-size: 26px;
+	font-weight: bolder;
+	color: #c60023;
+	margin-left: 40px;
+	height: 60px;
+    line-height: 60px;
+
+}

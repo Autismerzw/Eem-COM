@@ -1,0 +1,121 @@
+/*
+* @Author: 16469
+* @Date:   2017-07-16 23:39:36
+* @Last Modified by:   16469
+* @Last Modified time: 2017-07-17 16:26:09
+*/
+.page-wrap{
+	margin-top:10px;
+}
+.cart-top-con{
+	background: #eee;
+}
+.cart-table{
+	width: 100%;
+	margin-top: 10px;
+	border-collapse: collapse;
+    border: 1px solid #ebebeb;
+}
+.cart-table th,td{
+	border: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.cart-table .cart-cell{
+	width: 30px;
+    padding-left: 20px;
+    text-align: left;
+}
+.cart-top-con .cart-table .cell-check{
+	width: 130px;
+	height: 40px;
+	line-height: 40px;
+}
+.cart-table .cell-info {
+    width: 400px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.cell-info a{
+	font-weight: 100;
+}
+ .cart-table .cell-price {
+    width: 100px;
+    text-align: center;
+}
+.cart-table .cell-count {
+    width: 200px;
+    text-align: center;
+}
+.cell-count .count-num{
+	width: 60px;
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    vertical-align: middle;
+    outline: none;
+}
+.cc-op{
+	display: inline-block;
+    width: 20px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    cursor: pointer;
+    background: #fff;
+}
+.cart-table .cell-total {
+    width: 100px;
+    text-align: center;
+}
+.cart-table .cell-delete{
+    width: 110px;
+    text-align: center;
+    cursor: pointer;
+}
+.cart-table .cell-delete:hover{
+	color:#c60023;
+}
+.cart-table .cell-img{
+	width: 100px;
+	height: 100px;
+}
+.cart-bottom-con{
+	width: 100%;
+	height: 50px;
+	background: #eee;
+	line-height: 50px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.cart-bottom-con div{
+	display: inline-block;
+}
+.cart-bottom-con .cell-check{
+	width: 80px;
+	padding-left: 20px;
+}
+.del-con{
+	color: #999;
+	font-size: 12px;
+	cursor: pointer;
+}
+.del-con:hover{
+	color: #c60023;
+}
+.cart-bottom-con .cell-total{
+
+	float: right;
+}
+.cell-total .submit-count{
+	font-size: 20px;
+    color: #c60023;
+    font-weight: 700;
+    margin-right: 30px;
+    vertical-align: middle;
+}
+.cart-add{
+	height: 50px;
+}
