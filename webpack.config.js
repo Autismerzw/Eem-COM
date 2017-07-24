@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-21 02:46:17
+ * @Last Modified time: 2017-07-24 18:53:16
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -49,7 +49,9 @@ var config = {
     // 设置多文件夹存放文件
     output: {
         path: __dirname + '/dist/',
-        publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.happmmall.com/mmall-fe/dist/',
+        // publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.happmmall.com/mmall-fe/dist/',
+         publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.com/Eem-COM/dist/',
+        // publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.org/Eem-COM/dist/',
         filename: 'js/[name].js',
     },
     // 加载外部模块，或者变量
