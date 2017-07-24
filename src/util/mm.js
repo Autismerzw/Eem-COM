@@ -2,11 +2,12 @@
 * @Author: 16469
 * @Date:   2017-07-09 16:07:36
 * @Last Modified by:   16469
-* @Last Modified time: 2017-07-13 19:02:12
+* @Last Modified time: 2017-07-20 20:36:01
 */
 
 'use strict';
 var Hogan = require('hogan.js');
+
 var conf = {
 	serverHost : ''
 };
@@ -41,6 +42,7 @@ var _mm = {
 	// 获取后端服务器地址
 	getServerUrl : function (path){
 		return conf.serverHost + path;
+
 	},
 	// 获取url的参数
 	getUrlparam : function(name){
