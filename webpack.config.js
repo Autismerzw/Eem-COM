@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by:   16469
- * @Last Modified time: 2017-07-24 18:53:16
+ * @Last Modified time: 2017-08-04 21:34:16
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -11,7 +11,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 //环境变量 dev/ online
 
 var WEBPACK_ENV = process.env.WEBPACK_ENV || 'dev';
-console.log(WEBPACK_ENV);
 // 获取html模板打包的参数方法
 var getHtmlConfig = function(name,title) {
     return {
@@ -49,9 +48,7 @@ var config = {
     // 设置多文件夹存放文件
     output: {
         path: __dirname + '/dist/',
-        // publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.happmmall.com/mmall-fe/dist/',
-         publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.com/Eem-COM/dist/',
-        // publicPath  : "dev" === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.org/Eem-COM/dist/',
+        publicPath  :  'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
         filename: 'js/[name].js',
     },
     // 加载外部模块，或者变量
@@ -97,7 +94,11 @@ var config = {
             },
             {
                 test: /\.string$/, 
-                loader: 'html-loader'
+                loader: 'html-loader',
+                query:{
+                    minimize:true,
+                    removeAttributeQuotes:false
+                }
             }
     	]
     },
