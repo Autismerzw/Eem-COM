@@ -48,7 +48,7 @@ var config = {
     // 设置多文件夹存放文件
     output: {
         path: __dirname + '/dist/',
-        publicPath  :  'dev' === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.org/mmall-fe/dist/',
+        publicPath  :  'dev' === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.org/Eem-COM/dist/',
         filename: 'js/[name].js',
     },
     // 加载外部模块，或者变量
