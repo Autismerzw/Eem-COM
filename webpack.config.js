@@ -2,7 +2,7 @@
  * @Author: 16469
  * @Date:   2017-07-08 17:36:34
  * @Last Modified by: mikey.zhangwei
- * @Last Modified time: 2018-03-22 16:16:51
+ * @Last Modified time: 2018-03-22 16:35:58
  */
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -49,7 +49,6 @@ var config = {
     output: {
         path        : __dirname + '/dist/',
         publicPath  :  'dev' === WEBPACK_ENV ? '/dist/' : '//s.bujiangjiu.org/Eem-COM/dist/',
-        // publicPath  :  '/dist/',
         filename    : 'js/[name].js',
     },
     // 加载外部模块，或者变量
