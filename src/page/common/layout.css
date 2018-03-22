@@ -1,12 +1,13 @@
 /*
 * @Author: 16469
 * @Date:   2017-07-10 08:14:54
-* @Last Modified by:   16469
-* @Last Modified time: 2017-07-18 01:17:29
+ * @Last Modified by: mikey.zhangwei
+ * @Last Modified time: 2018-03-22 12:32:28
 */
 body{
 	background: #f6f6f6;
 	font-size: 12px/1.5 tahoma, arial, Microsoft YaHei, sans-serif;
+	min-width: 1260px;
 }
 img{
 	display: block;
@@ -19,7 +20,7 @@ input[type = "chackbox"]{
 	cursor: pointer;
 }
 .w {
-	min-width: 1080px;
+	max-width: 1260px;
 	margin : 0 auto;
 	position: relative;
 	overflow: hidden;
